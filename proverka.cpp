@@ -87,6 +87,28 @@ int main()
     
 }
 
+int main()
+{
+    float x, y;
+    while(true)
+    {
+        cout << "Write a number x: ";
+        cin >> x;
+        cout << "Write a number y: ";
+        cin >> y;
+        if (y >= x*x && y <= exp(x) && y <= exp(-x))
+        {
+            cout << "Inside dot\n";
+            cout << x + y << "\n";
+        }
+        else // if ((y <= x*x) || (y >= exp(x)) || (y >= exp(-x))) 
+        {
+            cout << "Outside dot!!\n";
+            cout << x - y << "\n";
+        }
+    }
+}
+
 
 
 
